@@ -17,6 +17,10 @@ h1 {
   margin-left: 5px;
 }
 
+.btn.btn-primary {
+  margin-left: 5px;
+}
+
 #tasks {
   border-radius: 10px;
   width: 100%;
@@ -30,9 +34,9 @@ h1 {
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #939697;
+  border: 1px solid #bec2c4;
   cursor: pointer;
-  background-color: #c5e1e6;
+  background-color: #eaf0f1;
   height: 50px;
   margin-bottom: 8px;
   padding: 5px 10px;
