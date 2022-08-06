@@ -34,18 +34,23 @@ document.querySelector("#create").onclick = function () {
     var done_tasks = document.querySelectorAll(".done");
 
     for (var i = 0; i < current_tasks.length; i++) {
+      //delete
       current_tasks[i].onclick = function () {
         this.parentNode.remove();
       };
 
+      //edit
       edit_tasks[i].onclick = function () {
         this.previousElementSibling.textContent = document.querySelector(
           "#to-do-input"
         ).value;
       };
+
+      //done
       done_tasks[i].onclick = function () {
         this.parentNode.style.backgroundColor = "green";
       };
     }
+    document.querySelector("#to-do-input").value = "";
   }
 };
